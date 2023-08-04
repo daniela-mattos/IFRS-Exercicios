@@ -1,0 +1,19 @@
+#include<stdio.h>
+int main (){
+  int x, *px;
+  x = 1;
+  px = &x; // == endereço de x
+  printf ("01. x= %d\n", x); //mostra o conteúdo de x
+  printf ("02. px= %u\n", px); //mostra o conteúdo de px == endereço de x
+  printf ("03. *px+1= %d\n", *px + 1); //mostra a soma de 1 ao valor de x, apontado pelo *px: (x + 1) == (1+1) == 2
+  printf ("04. px= %u\n", px); //mostra o conteúdo de px, que é o endereço de x
+  printf ("05. *px= %d\n", *px); //mostra o conteúdo apontado por *px == conteúdo de X
+  printf ("06. *px+=1= %d\n", *px += 1); //acrescenta 1 a *px(conteúdo de x), o mesmo que: *px = *px+1 == x+1 == 1+1 LOGO X passa a ser 2
+  printf ("07. px= %u\n", px); //mostra o conteúdo do px == endereço de x
+  printf ("08. (*px)++= %d\n", (*px)++); // incrementa +1 ao valor do conteúdo de x, o mesmo que *px = *px +1 == 2+1 (já que 2 é o conteúdo de x apontado por px) - X agora vale 3
+  printf ("09. px= %u\n", px); //mostra o conteúdo de px == endereço de x
+  printf ("10. *(px++)= %d\n", *(px++)); //incrementa +1 ao conteúdo de *px que era o endereço de x, agora é outro endereço de memória
+  printf ("11. px= %u\n", px); //mostra o conteúdo do px == número de endereço de x +1
+  printf ("12. *px++= %d\n", *px++); //acrescenta +1 ao conteúdo apontado por *px == endereço de x+1, o qual tem um lixo qualquer (desconhecido)
+  printf ("13. px= %u\n", px); //mostra novamente o conteúdo de px que é um endereço de memória
+}

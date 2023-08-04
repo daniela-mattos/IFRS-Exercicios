@@ -1,0 +1,25 @@
+/******************************************************************************
+
+Welcome to GDB Online.
+GDB online is an online compiler and debugger tool for C, C++, Python, Java, PHP, Ruby, Perl,
+C#, OCaml, VB, Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, SQLite, Prolog.
+Code, Compile, Run and Debug online from anywhere in world.
+
+*******************************************************************************/
+#include <stdio.h>
+
+int main()
+{
+    float v1, v2;
+    
+    printf("Informe o primeiro valor \n");
+    scanf("%f", &v1);
+    
+    printf("Informe o segundo valor \n");
+    scanf("%f", &v2);
+
+    printf("\n A soma dos dois valores é: %.2f \n", (v1 + v2));
+
+
+    return 0;
+}

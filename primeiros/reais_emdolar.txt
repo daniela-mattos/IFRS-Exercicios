@@ -1,0 +1,24 @@
+/******************************************************************************
+
+Welcome to GDB Online.
+GDB online is an online compiler and debugger tool for C, C++, Python, Java, PHP, Ruby, Perl,
+C#, OCaml, VB, Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, SQLite, Prolog.
+Code, Compile, Run and Debug online from anywhere in world.
+
+*******************************************************************************/
+#include <stdio.h>
+
+int main()
+{
+    float reais, cota;
+    
+    printf("Informe o valor em reais: \n");
+    scanf("%f", &reais);
+    
+    printf("Informe a cotação do dólar hoje: \n");
+    scanf("%f", &cota);
+    
+    printf("\n R$ %.2f reais convertido em dólares é: USD %.2f \n", reais, (reais / cota));
+
+    return 0;
+}
